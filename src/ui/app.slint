@@ -1,11 +1,14 @@
 import { Knight } from "knight.slint";
 
 export component App inherits Window {
-    width: 200px;
-    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    preferred-width: 200px;
+    preferred-height: 200px;
     background: blue;
 
     Knight {
-        
+        width: parent.width;
+        height: parent.height;
     }
 }

@@ -9,3 +9,6 @@ description = "Just resize the window ... so does the knight"
 
 [dependencies]
 slint = "1.0.2"
+
+[dev-dependencies]
+slint-build = "1.0.2"

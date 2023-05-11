@@ -1,3 +1,4 @@
+slint::include_modules!();
 fn main() {
-    println!("Hello, world!");
+    slint_build::compile("ui/app.slint").unwrap();
 }

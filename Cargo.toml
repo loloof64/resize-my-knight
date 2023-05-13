@@ -22,3 +22,7 @@ auto_link_exclude_list = [
     "libdl.so*",
     "libpthread.so*",
 ]
+
+[[bin]]
+name = "resize-my-knight"
+path = "src/main.rs"

@@ -19,7 +19,6 @@ assets = ["images"]
 auto_link = true
 auto_link_exclude_list = [
     "libdl.so*",
-    "libpthread.so*",
 ]
 
 [[bin]]

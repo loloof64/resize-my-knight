@@ -12,7 +12,7 @@ Just resize the window : and so will the knight.
 ### Linux (AppImage)
 
 1. `podman build -t resize-my-knight .`
-2. `podman run --rm -ti -v #MyShareFolder#:/share localhost/resize-my-knight:latest /bin/bash` where MyShareFolder is the folder you want to share, in your host system, with the container. So inside the container :
+2. `podman run --rm -ti -v #MyShareFolder#:/share localhost/resize-my-knight:latest /bin/bash` where #MyShareFolder# is the folder you want to share, in your host system, with the container. So inside the container :
    1. `cp *.AppImage /share`
    2. `exit`
 So that the built AppImage will be in your shared folder.

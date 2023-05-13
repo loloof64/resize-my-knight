@@ -17,9 +17,7 @@ slint-build = "1.0.2"
 [package.metadata.appimage]
 assets = ["images"]
 auto_link = true
-auto_link_exclude_list = [
-    "libdl.so*",
-]
+auto_link_exclude_list = []
 
 [[bin]]
 name = "resize-my-knight"

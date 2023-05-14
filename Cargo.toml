@@ -16,6 +16,7 @@ slint-build = "1.0.2"
 
 [package.metadata.appimage]
 assets = ["images"]
+auto_link = true
 
 [[bin]]
 name = "resize-my-knight"

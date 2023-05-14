@@ -35,4 +35,4 @@ So that the built AppImage will be in your shared folder.
 
 Knight vector has been taken from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces).
 
-Icon has been downloaded from https://fr.freepik.com/vecteurs-libre/concept-isometrique-jeu-echecs_6883519.htm.
+Icon has been downloaded from [FreePik](https://fr.freepik.com/vecteurs-libre/concept-isometrique-jeu-echecs_6883519.htm).

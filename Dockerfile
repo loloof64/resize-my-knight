@@ -7,9 +7,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl wget git c
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 
-# Install Cargo AppImage
-RUN cargo install cargo-appimage
-
 # Get project and compile
 RUN git clone https://github.com/loloof64/resize-my-knight.git
 WORKDIR /resize-my-knight

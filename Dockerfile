@@ -15,10 +15,10 @@ WORKDIR /
 
 # Configure AppDir
 RUN mkdir -p AppDir/usr/bin/
-RUN cp /resize-my-knight/target/release/app.desktop AppDir
+RUN cp /resize-my-knight/app.desktop AppDir
 RUN cp /resize-my-knight/target/release/resize-my-knight AppDir/usr/bin/
-RUN cp /resize-my-knight/target/release/icon.png AppDir/usr/share/icons/hicolor/256x256/apps/
-RUN cp -R /resize-my-knight/target/release/images AppDir
+RUN cp /resize-my-knight/icon.png AppDir/usr/share/icons/hicolor/256x256/apps/
+RUN cp -R /resize-my-knight/images AppDir
 RUN mv AppDir resize-my-knight.AppDir
 
 # Download appimagebuilder

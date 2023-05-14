@@ -15,6 +15,7 @@ WORKDIR /
 
 # Configure AppDir
 RUN mkdir -p AppDir/usr/bin/
+RUN mkdir -p AppDir/usr/share/icons/hicolor/256x256/apps/
 RUN cp /resize-my-knight/app.desktop AppDir
 RUN cp /resize-my-knight/target/release/resize-my-knight AppDir/usr/bin/
 RUN cp /resize-my-knight/icon.png AppDir/usr/share/icons/hicolor/256x256/apps/

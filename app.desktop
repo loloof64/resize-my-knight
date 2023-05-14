@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=resize-my-knight
+Exec=bin
+Icon=icon
+Type=Application
+Categories=Game;
+X-AppImage-Version=0.1.0

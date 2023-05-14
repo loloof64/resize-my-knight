@@ -28,7 +28,7 @@ RUN chmod +x /usr/local/bin/appimage-builder
 # Path appimagetool magic byte: https://github.com/linuxdeploy/linuxdeploy/issues/154#issuecomment-1084268159
 RUN dd if=/dev/zero of=/tmp/appimage-builder conv=notrunc bs=1 count=3 seek=8
 # Use appimagebuilder without fuse: https://github.com/AppImage/AppImageKit/wiki/FUSE#docker
-RUN APPIMAGE_EXTRACT_AND_RUN=1 /usr/local/bin/appimage-builder --appdir resize-my-knight.AppDir 
+RUN /tmp/appimage-builder --appdir resize-my-knight.AppDir 
 
 # Download appimagetool
 RUN wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-$(uname -m).AppImage -O /usr/local/bin/appimagetool
@@ -36,4 +36,4 @@ RUN chmod +x /usr/local/bin/appimagetool
 # Path appimagetool magic byte: https://github.com/linuxdeploy/linuxdeploy/issues/154#issuecomment-1084268159
 RUN RUN dd if=/dev/zero of=/tmp/appimagetool conv=notrunc bs=1 count=3 seek=8
 # Use appimagetool without fuse: https://github.com/AppImage/AppImageKit/wiki/FUSE#docker
-RUN APPIMAGE_EXTRACT_AND_RUN=1 /usr/local/bin/appimagetool resize-my-knight.AppDir
+RUN /tmp/appimagetool resize-my-knight.AppDir

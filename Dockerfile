@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 # Prerequesites
 RUN apt-get update && apt-get install -y --no-install-recommends curl wget git ca-certificates gcc libc-dev file

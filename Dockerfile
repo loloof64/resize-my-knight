@@ -18,6 +18,6 @@ WORKDIR /resize-my-knight
 RUN wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-$(uname -m).AppImage -O /usr/local/bin/appimagetool
 RUN chmod +x /usr/local/bin/appimagetool
 # Path appimagetool magic byte: https://github.com/AppImage/pkg2appimage/issues/373#issuecomment-495754112
-# RUN sed -i 's|AI\x02|\x00\x00\x00|' /usr/local/bin/appimagetool
+RUN sed -i 's|AI\x02|\x00\x00\x00|' /usr/local/bin/appimagetool
 # Use appimagetool without fuse: https://github.com/AppImage/AppImageKit/wiki/FUSE#docker
 RUN APPIMAGE_EXTRACT_AND_RUN=1 cargo appimage
